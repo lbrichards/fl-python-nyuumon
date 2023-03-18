@@ -11,8 +11,10 @@ import datetime
 from dateutil.parser import parse
 
 def how_many_days_between(date1_str, date2_str):
-    # 文字列からdatetime.dateオブジェクトを作り、その差分を返す。
-    ...
+    # 文字列からdatetime.dateオブジェクトを作る
+    date1 = parse(date1_str).date()
+    date2 = parse(date2_str).date()
+    return abs((date2-date1).days)
 
 def main():
     # Prompt the user for the two dates
@@ -31,12 +33,10 @@ def test():
     if test_output == correct_answer:
         print(f"正解です。出力：{test_output}")
     else:
-        print(f"""
-残念でした。もう一度チャレンジしましょう。
-テスト入力の"{s1}"と"{s2}"に対して、
-正解は「{correct_answer}」でしたが、「{test_output}」が出力されました。
-        """)
+        pass
 
 
-# call the test function
-test()
+if __name__ == '__main__':
+    main()
+else:
+    test()
