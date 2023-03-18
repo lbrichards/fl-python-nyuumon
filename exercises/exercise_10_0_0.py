@@ -38,5 +38,7 @@ def test():
         """)
 
 
-# call the test function
-test()
+if __name__ == '__main__':
+    main()
+else:
+    test()
