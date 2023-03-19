@@ -21,6 +21,8 @@ for k, v in initial_locals1.items():
     print(k, " : ", v)
 
 # ---
+print("="*30)
+print("="*30)
 
 initial_locals2 = dict(locals())
 for k, v in initial_locals2.items():
