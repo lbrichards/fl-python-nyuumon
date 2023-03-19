@@ -16,19 +16,16 @@ def calc_averages():
     averages = [] #ここを変更してください
     return averages
 
-initial_locals1 = dict(locals())
-for k, v in initial_locals1.items():
-    print(k, " : ", v)
-
 # ---
-print("="*30)
-print("="*30)
 
-initial_locals2 = dict(locals())
-for k, v in initial_locals2.items():
-    print(k, " : ", v)
 
+locals()["__istest__"] = False
 def test():
+    locals()["__istest__"] = True
+
+if __istest__:
+
+def exercise_test():
     from numpy import testing
     test_output = calc_averages()
     correct = [28.5, 50.5, 72.5, 67.25, 39.75]
@@ -41,8 +38,9 @@ def test():
 今回の要求出力は「{correct}」でしたが、「{test_output}」が出力されました。
     """)
 
-test()
-if __name__ == '__main__':
-    test()
+if locals['__istest__']:
+    exercise_test()
+else:
+    calc_averages()
 
 
