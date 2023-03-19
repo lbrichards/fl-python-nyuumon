@@ -16,10 +16,15 @@ def calc_averages():
     averages = [] #ここを変更してください
     return averages
 
+initial_locals1 = dict(locals())
+for k, v in initial_locals1.items():
+    print(k, " : ", v)
+
 # ---
 
-for k, v in locals():
-    print(k, ":", v)
+initial_locals2 = dict(locals())
+for k, v in initial_locals2.items():
+    print(k, " : ", v)
 
 def test():
     from numpy import testing
