@@ -16,12 +16,9 @@ def calc_averages():
     averages = [] #ここを変更してください
     return averages
 
+print(calc_averages())
+
 # ---
-
-
-locals()["__clicked_test_button__"] = False
-def test():
-    locals()["__clicked_test_button__"] = True
 
 def exercise_test():
     from numpy import testing
@@ -36,10 +33,4 @@ def exercise_test():
 今回の要求出力は「{correct}」でしたが、「{test_output}」が出力されました。
     """)
 
-if locals()['__clicked_test_button__']:
-    exercise_test()
-else:
-    print(f"""
-出力: {calc_averages()}""")
-
-
+exercise_test()
