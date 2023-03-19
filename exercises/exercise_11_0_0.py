@@ -19,11 +19,9 @@ def calc_averages():
 # ---
 
 
-locals()["__istest__"] = False
+locals()["__clicked_test_button__"] = False
 def test():
-    locals()["__istest__"] = True
-
-if __istest__:
+    locals()["__clicked_test_button__"] = True
 
 def exercise_test():
     from numpy import testing
@@ -38,9 +36,10 @@ def exercise_test():
 今回の要求出力は「{correct}」でしたが、「{test_output}」が出力されました。
     """)
 
-if locals['__istest__']:
+if locals()['__clicked_test_button__']:
     exercise_test()
 else:
-    calc_averages()
+    print(f"""
+出力: {calc_averages()}""")
 
 
