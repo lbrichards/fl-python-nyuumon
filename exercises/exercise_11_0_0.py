@@ -17,6 +17,10 @@ def calc_averages():
     return averages
 
 # ---
+
+for k, v in locals():
+    print(k, ":", v)
+
 def test():
     from numpy import testing
     test_output = calc_averages()
