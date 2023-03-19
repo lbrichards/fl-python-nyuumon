@@ -34,7 +34,7 @@ def test():
 今回の要求出力は「{correct}」でしたが、「{test_output}」が出力されました。
     """)
 
-
+test()
 if __name__ == '__main__':
     test()
 
