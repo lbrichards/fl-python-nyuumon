@@ -34,7 +34,7 @@ def get_first_zoo_animal():
 
 # ---
 
-def test_return_first_zoo_animal():
+def test_get_first_zoo_animal():
     found = get_first_zoo_animal()
     expected = "panda"
     if found == expected:
