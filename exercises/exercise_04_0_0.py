@@ -8,7 +8,7 @@
 以下に、zoo_animalsと、maybe_in_zooという二つのリストがあります。
 for loopの中で、maybe_in_zooの中から、zoo_animalsにも含まれる要素を
 検出し、ループをbreakにより中断させる。ループを中断すると、その時の
-animalとう変数の値が返される。
+animalという変数の値が返される。
 
 つまり、今回はget_first_zoo_animal()という関数が、どこかの
 プログラムで呼ばれると、その呼ばれたところに返り値を返す。
