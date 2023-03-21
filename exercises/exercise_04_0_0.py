@@ -45,4 +45,4 @@ def test_get_first_zoo_animal():
 今回の要求出力は「{found}」でしたが、「{expected}」が出力されました。
                 """)
 
-test_return_first_zoo_animal()
+test_get_first_zoo_animal()
