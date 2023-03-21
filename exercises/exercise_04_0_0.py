@@ -44,7 +44,7 @@ def test_get_first_zoo_animal():
     else:
         print(f"""
 残念でした。もう一度チャレンジしましょう。
-今回の要求出力は「{found}」でしたが、「{expected}」が出力されました。
+今回の要求出力は「{expected}」でしたが、「{found}」が出力されました。
                 """)
 
 test_get_first_zoo_animal()
