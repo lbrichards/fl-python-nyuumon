@@ -32,6 +32,8 @@ def get_first_zoo_animal():
 
     return animal
 
+print(get_first_zoo_animal())
+
 # ---
 
 def test_get_first_zoo_animal():
