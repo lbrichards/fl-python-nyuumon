@@ -35,7 +35,7 @@ def get_first_zoo_animal():
 # ---
 
 def test_return_first_zoo_animal():
-    found = return_first_zoo_animal()
+    found = get_first_zoo_animal()
     expected = "panda"
     if found == expected:
         print(f"正解です。出力：{found}")
