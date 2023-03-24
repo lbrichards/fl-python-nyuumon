@@ -14,13 +14,14 @@
 
 """
 
-tolerance = .00001
+tolerance = 1e-12
 
 def calc_golden_ratio():
-    a, b = 0, 1
-    prev_ratio = 0
-    ratio = 1
-    while False: # この行を変更し、ループの停止条件を入れる
+    a, b = 1, 2
+    prev_ratio = tolerance
+    ratio = b
+
+    while False: # Falseを条件文に書き換えてください
         a, b = b, a + b
         prev_ratio, ratio = ratio, b / a
     return ratio
