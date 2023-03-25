@@ -26,10 +26,13 @@ print(sum_of_squares([1,2,3,4,5])) # "55"
 # ---
 
 def test():
-    found = sum_of_squares([1,2,3,4,5])
+    numbers = [1,2,3,4,5]
+    found = sum_of_squares(numbers)
     expected = 55
     if found == expected:
-        print(f"正解です。出力：{found}")
+        print(f"""正解です。
+入力：{numbers}
+f"出力：{found}""")
     else:
         print(f"""
 残念でした。もう一度チャレンジしましょう。
