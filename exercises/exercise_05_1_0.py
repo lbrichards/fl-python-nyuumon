@@ -32,7 +32,7 @@ def test():
     if found == expected:
         print(f"""正解です。
 入力：{numbers}
-f"出力：{found}""")
+出力：{found}""")
     else:
         print(f"""
 残念でした。もう一度チャレンジしましょう。
