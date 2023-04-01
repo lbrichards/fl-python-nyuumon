@@ -54,7 +54,7 @@ def test():
     shapes = ["round", "curved"]
 
     for color, shape in product(colors, shapes):
-        found = model(color, shape)
+        found = classify_fruit(color, shape)
 
         expected = model(color, shape)
         if found == expected:
