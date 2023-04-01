@@ -16,7 +16,7 @@ from math import pi, sqrt
 g = 9.8
 
 def calc_frequency(L):
-    return -1 #ここで戻り値を計算
+    return 1/(2*pi)*sqrt((g/L)) # 正解例
 
 # 関数をテスト
 L = 1.5
