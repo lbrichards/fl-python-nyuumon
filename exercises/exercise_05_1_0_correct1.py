@@ -15,7 +15,9 @@ numbersのデフォルト値は空リスト[]とし、そのままの入力の
 
 def sum_of_squares(numbers = []):
     result = 0
-    return sum(n**2 for n in numbers) #正解例
+    for n in numbers: #正解例
+        result += n**2 #正解例
+    return result
 
 # 関数をテスト
 print(sum_of_squares([])) # "0"
