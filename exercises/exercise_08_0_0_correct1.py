@@ -33,7 +33,7 @@ print("The result is :", manga2)
 
 def f(k):
     manga2 = deepcopy(manga)
-    del manga2[k]
+    del manga2[k] # 正解例
     return manga2
 
 def test():
@@ -45,10 +45,11 @@ def test():
                 f"""Test Case {i+1}:
 正解です。{to_remove}は正しく削除されました。""")
         else:
-                print(f"""
+            print(f"""
 残念でした。もう一度チャレンジしましょう。
 「{to_remove}」が削除される予定でしたが、
 削除されなかったようです。""")
+            break
 
 
 test()
