@@ -17,9 +17,8 @@ def how_many_days_between(date1_str, date2_str):
     return abs((date2-date1).days)
 
 def main():
-    # Prompt the user for the two dates
-    date1_str = input("Enter the first date in YYYY-MM-DD format: ")
-    date2_str = input("Enter the second date in YYYY-MM-DD format: ")
+    date1_str = '2025-03-11'
+    date2_str = '2026-03-11'
     ndays = how_many_days_between(date1_str, date2_str)
     print(f"There are {ndays} days between {date1_str} and {date2_str}.")
 
@@ -36,7 +35,5 @@ def test():
         pass
 
 
-if __name__ == '__main__':
-    main()
-else:
-    test()
+
+test()
