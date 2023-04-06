@@ -7,15 +7,27 @@
 なんでも試してみましょう。
 例えば…
 
->>> 5+2 #足し算
->>> 5-2 #引き算
->>> 5*2 #掛け算
->>> 5/2 #割り算
->>> 5//2 #整数割り算
->>> "a"*10 #文字列の掛け算
->>> type(6) #6のデータ型をプリントする
->>> type(0.5) #0.5のデータ型をプリントする
->>> type("b") #"b"のデータ型をプリントする
+>>> "a" in "abc"
+>>> "z" in "abc"
+>>>len("abc")
+>>>len("abcqwery")
+>>>"abc" == "xyz"
+>>>"t"=="t"
+>>> 1==1
+>>> 1==0
+>>> type(True)
+>>> type(False)
+>>> dir("")
+>>> "abc".capitalize()
+>>>"abc".upper()
+>>>"abc".startswith("a")
+>>>"abc".find("c")
+>>> "abc".find("z")
+>>>"123".isnumeric()
+>>>"123xxx".isnumeric()
+>>> "2025 04 01".replace(" ", "-")
+>>> "they live in Japan".split()
+>>> "they live in Japan".split("i")
 """
 
 
