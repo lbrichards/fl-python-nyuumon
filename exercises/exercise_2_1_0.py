@@ -4,16 +4,10 @@
 Run ラン ボタンを押しても実行されません。
 左下のConsoleで試してみましょう。
 
->>> "a" in "abc"
->>> "z" in "abc"
->>>len("abc")
->>>len("abcqwery")
->>>"abc" == "xyz"
->>>"t"=="t"
->>> 1==1
->>> 1==0
->>> type(True)
->>> type(False)
+>>> dir("")
+>>> "abc".capitalize()
+>>>"abc".upper()
+
 """
 
 
