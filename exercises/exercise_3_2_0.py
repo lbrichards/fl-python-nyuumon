@@ -4,17 +4,23 @@
 Run ラン ボタンを押しても実行されません。
 左下のConsoleで試してみましょう。
 
->>> mylist = ["a", 3.14, -6, 10]
+>>> sentence = "mukashi mukashi sono mukashi"
 
->>> mylist
+>>> sentence.split()
 
->>> mylist[2]
+>>> type(sentence.split())
 
->>> mylist[1:3]
+>>> words = sentence.split()
 
->>> mylist[1:]
+>>> words
+>>> words[3:]
+>>> words[-2:]
+>>> words.sort()
+>>> words
 
->>> mylist[-2:]
+>>> dir([])
+
+
 """
 
 

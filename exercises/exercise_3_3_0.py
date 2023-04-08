@@ -4,17 +4,15 @@
 Run ラン ボタンを押しても実行されません。
 左下のConsoleで試してみましょう。
 
->>> mylist = ["a", 3.14, -6, 10]
+>>> dir([])
 
->>> mylist
+>>> words.append(123)
+>>> words
+>>> dir(words)
+>>> words.count("mukashi")
+>>> words.count("sono")
+>>> words.count("SONO")
 
->>> mylist[2]
-
->>> mylist[1:3]
-
->>> mylist[1:]
-
->>> mylist[-2:]
 """
 
 
