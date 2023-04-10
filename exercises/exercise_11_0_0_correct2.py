@@ -5,20 +5,29 @@ data = [
     [45, 67, 89, 12, 34]
 ]
 def calc_averages():
-    num_cols = len(data[0]) # Assumes that all rows have the same number of columns
-    # Initialize a list to store the sum of values in each column
-    col_sums = [0] * num_cols
+    num_cols = len(data[0]) # 正解例
+    col_sums = [0] * num_cols # 正解例
+    for row in data: # 正解例
+        for i, value in enumerate(row): # 正解例
+            col_sums[i] += value # 正解例
+    averages = [] # 正解例
+    for i, col_sum in enumerate(col_sums): # 正解例
+        averages.append(col_sum / len(data)) # 正解例
+    return averages # 正解例
 
-    # Iterate over each row and accumulate the sum of values in each column
-    for row in data:
-        for i, value in enumerate(row):
-            col_sums[i] += value
+# ---
 
-    # Compute the average of values in each column and print the result
-    averages = []
-    for i, col_sum in enumerate(col_sums):
-        averages.append(col_sum / len(data))
-    return averages
+def exercise_test():
+    from numpy import testing
+    test_output = calc_averages()
+    correct = [28.5, 50.5, 72.5, 67.25, 39.75]
+    try:
+        testing.assert_array_equal(test_output, correct)
+        print(f"正解です。出力：{test_output}")
+    except:
+        print(f"""
+残念でした。もう一度チャレンジしましょう。
+今回の要求出力は「{correct}」でしたが、「{test_output}」が出力されました。
+    """)
 
-if __name__ == '__main__':
-    print(calc_averages())
+exercise_test()
