@@ -2,6 +2,8 @@ import platform
 if platform.system() == 'Emscripten':
     import matplotlib
     matplotlib.use("module://matplotlib.backends.html5_canvas_backend")
+from matplotlib import pyplot as plt
+plt.clf()
 # 　上記のコードを変更しないでください。Codeletの中でmatplotlibを使うのに必要です。
 
 """
