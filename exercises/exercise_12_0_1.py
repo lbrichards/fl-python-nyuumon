@@ -9,7 +9,7 @@ if platform.system() == 'Emscripten':
 """
 
 from matplotlib import pyplot as plt
-plt.rcParams['font.family'] = 'MS Gothic'
+plt.rcParams['font.family'] = 'DejaVu Sans'
 
 x = [0, 1]
 y = [1, 0]
@@ -19,6 +19,6 @@ plt.plot(x, y, 'g', lw=3)
 # gridを表示させる
 plt.grid(True)
 # タイトルを表示させる
-plt.title("日本語", font="MS Gothic")
+plt.title("日本語", font="DejaVu Sans")
 
 plt.show()
