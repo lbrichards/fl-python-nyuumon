@@ -11,7 +11,7 @@ combinations_with_replacement()という関数を利用します。
 
 利用例：
 
->>> list(combinations_with_replacement('ABC', 2))
+>>> list(combinations_with_replacement('ABC', n=2))
 [('A', 'A'), ('A', 'B'), ('A', 'C'), ('B', 'B'), ('B', 'C'), ('C', 'C')]
 
 見てわかるように、'ABC'の各要素を、（重複ありで）２個ずつ取り出し、
@@ -19,6 +19,9 @@ combinations_with_replacement()という関数を利用します。
 
 *この場合は組み合わせが見えるようにlist()で包んでいます。listを使わなかったら
 返り値はイテレーター・オブジェクトですから、その場合は中身が見えなかったからです。
+
+注意点　ー　引数の"n"を大きく設定すると、夥しいコンビネーションが生成され、
+演算時間が非常に長くなることもあります。ご注意ください。
 
 さて、今回の演習問題のです。レジの中に次の六種類の硬貨が１００個ずつ入っているとします。
 
@@ -29,7 +32,7 @@ combinations_with_replacement()という関数を利用します。
 百円
 五百円
 
-レジの中から、２０個の硬貨が一辺に取り出すことが可能です。
+レジの中から、15個の硬貨が一辺に取り出すことが可能です。
 ２０個の合計金額がちょうど千円になるようなる、コンビネーションを
 全てリストにしてください。返り値はリストのリストになります。
 
@@ -54,7 +57,7 @@ for c in combs:
 
 def f():
     sums_to_1000 = []
-    for combination in combinations_with_replacement(coin_list,20):
+    for combination in combinations_with_replacement(coin_list,15):
         if sum(combination)==1000:
             sums_to_1000.append(combination)
     return sums_to_1000

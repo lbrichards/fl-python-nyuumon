@@ -29,7 +29,7 @@ combinations_with_replacement()という関数を利用します。
 百円
 五百円
 
-レジの中から、２０個の硬貨が一辺に取り出すことが可能です。
+レジの中から、15個の硬貨が一辺に取り出すことが可能です。
 ２０個の合計金額がちょうど千円になるようなる、コンビネーションを
 全てリストにしてください。返り値はリストのリストになります。
 
@@ -42,9 +42,9 @@ coin_list = [1, 5, 10, 50, 100, 500]
 
 def make_1000_yen_combinations():
     sums_to_1000 = []
-    for combination in combinations_with_replacement(coin_list,20):
-        if sum(combination)==1000:
-            sums_to_1000.append(combination)
+    for combination in combinations_with_replacement(coin_list,15):  # 正解例
+        if sum(combination)==1000:  # 正解例
+            sums_to_1000.append(combination)  # 正解例
     return sums_to_1000
 
 # テスト　プログラム
@@ -56,7 +56,7 @@ for c in combs:
 
 def f():
     sums_to_1000 = []
-    for combination in combinations_with_replacement(coin_list,20):
+    for combination in combinations_with_replacement(coin_list,15):
         if sum(combination)==1000:
             sums_to_1000.append(combination)
     return sums_to_1000
