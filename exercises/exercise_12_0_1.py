@@ -7,7 +7,7 @@ plt.clf()
 # 　上記のコードを変更しないでください。Codeletの中でmatplotlibを使うのに必要です。
 
 """
-次に、少し芽生えよく加工してみたり、図の属性を色々変えてみよう。
+次に、少し見栄えよく加工してみたり、図の属性を色々変えてみよう。
 """
 
 from matplotlib import pyplot as plt
